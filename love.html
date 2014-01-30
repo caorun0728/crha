@@ -192,12 +192,9 @@
         }));
 
         var textAnimate = eval(Jscex.compile("async", function () {
-		    var together = new Date();
-		    together.setFullYear(2008, 06, -29); 			//时间年月日
-		    together.setHours(16);						//小时	
-		    together.setMinutes(53);					//分钟
-		    together.setSeconds(0);					//秒前一位
-		    together.setMilliseconds(2);				//秒第二位
+		    var strs = "2008-06-29 00:00:20";
+				var nowTime=new Date();
+				var together = new Date(strs.replace(/-/g,"/"));
 
 		    $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
