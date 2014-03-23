@@ -18,6 +18,11 @@
   <p><center><h1>GIT相关命令</h1></center></p>
 <p><center><h3>cr.ha.cn/gitcode.html</h3></center></p>
 <hr>
+<p><strong>0.全局设置 </strong></p>
+<p>
+git config --global user.name "曹润"   用户名<br>
+git config --global user.email "你的Email"<br>
+</p>
 <p><strong>1、推送发布新的版本代码如下：</strong></p>
 <p>git add .<br>
 git commit -a -m '0.1.284'<br>
@@ -26,7 +31,31 @@ git push origin <font size="" color="#ff0000">gh-pages</font><br>
 </p>
 <p>2、克隆到本地<br>
 git clone git@github.com:caorun0728/caorun.biz.git<br>
-git clone git@github.com:<项目所有者名称>/<项目名>.git 
+git clone git@github.com:<项目所有者名称>/<项目名>.git <br>
+git clone -b branch remote_repo <br>
+
+</p>
+<p><strong>3、关于git软件设置</strong></p>
+<p>
+如何设置默认打开的目录<br>
+1）在软件安装目录内找到etc文件夹，然后打开profile文件。<br>
+2）添加代码如下：<br>
+# set Project Path<br>
+proj="你的项目文件目录"<br>
+cd $proj<br>
+
+</p>
+<p><strong>5、其他相关语法</strong></p>
+<p>
+1、打开 cd<br>
+2、退出当前目录 cd ..<br>
+3、创建目录mkdir 文件夹名称<br>
+4、git remote  # 仅显示远程仓库名称<br>
+5、git remote -v # 显示远程仓库名称和仓库地址<br>
+6、git remote show # 同git remote<br>
+7、git remote show origin # 查看远程仓库名称为 origin<br>
+8、初始化 git init<br>
+
 </p>
 
 <hr>
