@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+<!-- 小米发布会PC发射到手机端的JS代码 -->
+<script>
+        var isM = function () {
+            var ua = navigator.userAgent;
+            if (ua.indexOf('Android') > -1 || ua.indexOf('iPhone') > -1 || ua.indexOf('iPod') > -1 || ua.indexOf('Symbian') > -1) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+        if (isM()) {
+            var url = 'http://static.xiaomi.cn/515m/';
+            var referral = window.location.href.split('?from=')[1];
+            if (referral) {
+                url = url + '?from=' + referral;
+            }
+            window.location.href = url;
+        }
+    </script>
+
+
+ </head>
+ <body>
+  
+ </body>
+</html>
