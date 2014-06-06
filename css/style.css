@@ -1,16 +1,12 @@
-﻿<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<style>
+/*caorun css for cr.ha.cn*/
 *{margin:0;padding:0;}
 body {
-	font:15px helvetica,arial,freesans,clean,sans-serif;
+	font:14px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 	color:black;
 	line-height:1.4em;
-	background-color: white;
+	background-color:white;
 	padding: 0.7em;
-	background:url(http://www.cr.ha.cn/images/point.jpg);
+
 }
 p {
 	margin:0.8em 0;
@@ -62,9 +58,9 @@ h2,h3{margin:1em 0;}
 h1,h2,h3,h4,h5,h6{border:0;}
 h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
 h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
-h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+h2{font-size:150%;margin-bottom:1em;border-bottom:1px solid #ced0d5;padding-bottom:.5em;}
 h3{margin-top:1em;}
-hr{border:1px solid #ddd;}
+hr{border:px solid #ced0d5;}
 ul{margin:1em 0 1em 2em;}
 ol{margin:1em 0 1em 2em;}
 ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
@@ -78,35 +74,4 @@ dd{margin-left:2em;margin-bottom:1em;}
         margin:10px auto;
     }
 }
-#email a:after{color:#575757;content:'@126.com';text-decoration:none;}
-#email a{color:#575757;text-decoration:none;}
-</style>
-<title>便签-CR.HA.CN/NOTE.HTML</title>
-
-</head>
-<body>
-<h1>便签</h1>
-<p>
-记录事情的本子！
-</p>
-<h2>未解决</h2>
-<p>未解决的事情，就是按照件数去做！</p>
-<ol>
-	<li>[不限]景观阳台空调机位，逃生口，观察903如何解决，先适当咨询调节！否，通知物业。告知属于我方所有领土！冷静，看合同，存土不让！#2014-05-19,我个人觉得，如果没必要实际的利益损害，暂且忍住，如果损害个人利益，各种手段！更多详情：<a href="blacklist/libao.html" target="_blank">点击</a></li>
-	<li>2014年6月3日购买<a href="http://t.cn/RvMAk5O" target="_blank">脚气药物</a>，圆通快递：<a href="http://ckd.im/bGKtP " target="_blank">3670798063</a></li>
-	<li>在此我隆重的推荐使用六神冰凉超爽、劲凉酷爽沐浴露！</li>
-	
-</ol>
-<h2>已经解决</h2>
-<p>用作存档，为以后查询便捷，仅显示本月归档！</p>
-<h3>2014-06</h3>
-<ol>
-	<li>暂无</li>
-
-</ol>
-<h3>尘封档案</h3>
-<a href="http://www.kuaipan.cn/file/id_22918405052956844.htm" target="_blank">2014年1月-4月</a> （提取码：66Yu1V）</p>
-<hr>
-<center><p>好记星不如烂笔头！</p></center>
-</body>
-</html>
+email:after {content: "@126.com";}
