@@ -1,0 +1,62 @@
+body,p,h3,li,ul,dl,dd,dt,img{ margin:0; padding: 0;}
+img{border:none;}
+a{ text-decoration: none;}
+.clear { clear: both;}
+body{ width: 100%; background: #fff;}
+.main{ width: 320px; margin: 0 auto;}
+.top {margin:0 auto 10px auto;}
+.top img{ width: 320px;}
+.top_xz { width: 300px; margin:0 10px; border-bottom: #999999 1px dashed; padding-bottom: 15px;}
+#top_xz_b { border-bottom: none;}
+.top_xz dt{ background: url(ckd.gif) no-repeat 0 4px; padding-left: 30px; width: 80px; height: 35px; line-height: 35px; margin: 0 auto; font-family: "微软雅黑"; font-size: 25px; color: #434343 }
+.top_xz dd{position: relative;width: 188px;height: 45px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;background-color: #349e46; margin: 15px auto;}
+.top_xz dd p{ display:block;width: 188px;
+	height: 43px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;filter:alpha(opacity=20); 
+-moz-opacity:0.2; 
+opacity:0.2;
+line-height: 43px; padding-left:40px; position: absolute; }
+.top_xz dd a{ display: block; color: #FFF;  font-family: "微软雅黑";font-size: 18px; height: 43px; line-height: 43px;  width: 188px; position:absolute;}
+.top_xz dd em { display: block; font-style: normal; position: absolute;height:40px;  background: url(android.png) no-repeat 20px 7px;padding-left: 55px;width:133px }
+.top_xz dd span {display: block; position: absolute; height:40px;  background: url(ios.png) no-repeat 20px 7px;padding-left: 55px; width:133px}
+.lanmu { width: 300px; margin: 10px auto; border-bottom: #999999 1px dashed; text-align: center;}
+.lanmu h3 { line-height: 30px; height: 30px; font-family: "微软雅黑"; font-size: 24px; font-weight: normal; color: #333333; margin: 10px auto;}
+.lanmu p { color: #4a4a4a; height: 25px;line-height: 25px; font-family: "微软雅黑";}
+.het01 { height: 300px; background: url(tu1.gif) no-repeat 0 80px; margin: 20px auto 10px auto;}
+.het02 { height: 310px; background: url(tu2.gif) no-repeat 0 80px; margin: 20px auto 10px auto;}
+.het03 { height: 280px; background: url(tu3.gif) no-repeat 0 80px; margin: 20px auto 10px auto;}
+.xiazai dd{ float: left;}
+.xiazai { width: 300px; margin: 10px auto; }
+.xz_ck dd{width: 130px;height: 40px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;background-color: #349e46; margin: 10px 10px 10px 0;}
+.xz_ck dd p{ display:block;width: 90px;
+	height: 38px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;filter:alpha(opacity=20); 
+-moz-opacity:0.2; 
+opacity:0.2;
+ padding-left:40px; position: absolute; }
+.xiazai dd a{ display: block; color: #FFF;  font-family: "微软雅黑";font-size: 14px; height: 38px; line-height: 40px; position:absolute;width: 130px;}
+.xiazai dd em { display: block; font-style: normal; height: 36px;  background: url(android.png) no-repeat 7px 5px;  padding-left: 35px; }
+.xiazai dd span {display: block;  height:36px; background: url(ios.png) no-repeat 5px 5px; padding-left: 35px; }
+.xiazai{ }
+.xz_ck dt{ height: 40px; line-height: 40px; width: 80px; padding-left: 30px; background: url(ckd.gif) no-repeat; margin: 0 auto; font-family: "微软雅黑"; color: #434343; font-weight: bold;}
+.xz_ck dt{background: url(ckd.gif) no-repeat 0 5px;}
+.xz_sj dd {width: 130px;height: 40px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;background-color: #4f7c98; margin: 10px 10px 10px 0;}
+.xz_sj dd p{ display:block;width: 90px;
+	height: 38px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;filter:alpha(opacity=20); 
+-moz-opacity:0.2; 
+opacity:0.2;
+ padding-left:40px; position: absolute; }
+.xz_sj dt{ height: 40px; line-height: 40px; width: 80px; padding-left: 30px; background: url(sjd.gif) no-repeat 0 5px; margin: 0 auto; font-family: "微软雅黑"; color: #434343; font-weight: bold;}
+.xz_ck { width:285px; border-bottom: #999999 1px dashed; padding-bottom: 15px; margin-bottom: 10px;padding-left: 15px;}
+.xz_sj{padding-left: 15px;}.
+.top_xz { border-bottom: #999999 1px dashed;}
