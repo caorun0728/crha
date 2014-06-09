@@ -1,0 +1,219 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>新浪短链接生成器（JSONP版本）</title>
+<script type="text/javascript" src="js/tangram-1.3.5.core.js"></script>
+<script type="text/javascript" src="js/jsonp.js"></script>
+<script type="text/javascript" src="js/xUtil.js"></script>
+</head>
+
+<body>
+<h1>新浪短链接生成器（JSONP版本）</h1>
+
+<div id="main">
+	<div>请输入链接（请包括"http://"，否则将无法运行）：
+		<input name="longurl" id="longurl" type="text" value="" size="60" />
+		&nbsp;<input name="openShortUrl" id="openShortUrl" type="button" onclick="javascript:xController.common.openLongUrl();" value="打开" />
+		&nbsp;<input name="openShareLong" id="openShareLong" type="button" onclick="javascript:xController.sina.openShareLong();" value="分享此长链接到新浪微博" />
+	</div>
+	<div>请输入APPKEY：
+		<input name="appkey" id="appkey" type="text" value="1681459862" />&nbsp;（如果要使用自己的appkey，请在此更换；默认为新浪微博分享按钮的appkey：1681459862）
+	</div>
+	<div>
+		<input name="submitsearch" id="submitsearch" type="button" value="生成短链接！" />
+	</div>
+	<div>
+		生成的短链接：<input name="shorturl" id="shorturl" type="text" value="" />
+		&nbsp;分享/转发数：<span id="sharecount">0</span>
+		&nbsp;<input name="openShortUrl" id="openShortUrl" type="button" onclick="javascript:xController.common.openShortUrl();" value="打开" />
+		&nbsp;<input name="openShareShort" id="openShareShort" type="button" onclick="javascript:xController.sina.openShareShort();" value="分享此短链接到新浪微博" />
+	</div>
+	<hr />
+</div>
+
+<div id="side">
+生成页面
+</div>
+
+
+<div id="footer">
+	<div id="debugTxt" style="color:blue;"></div>
+	<hr />
+	<div id="footer_link">
+	cr.ha.cn
+	</div>
+</div>
+
+<script>
+var xController =  {};
+var xModel =  {};
+
+xController.sina = {};
+
+xController.sina.getShortUrl = function(){
+	xController.sina.clearShortUrl();
+	xUtil.debug.clearTxt();
+	xUtil.debug.outputTxt(new Date() + ' 开始运行');
+	
+	var appkey = T.dom.g('appkey').value;
+	var longurl = T.dom.g('longurl').value;
+	if(appkey == ''){
+		return xUtil.debug.outputTxt('错误：appkey不能为空！如果不熟悉，请填写1681459862', true);
+	}else if(longurl == ''){
+		return xUtil.debug.outputTxt('错误：长链接不能为空！', true);
+	}
+
+	xModel.sina.runShortUrlJsonp(longurl, appkey);
+	//alert(rst.error);
+	xUtil.debug.outputTxt(new Date() + ' xController.sina.getShortUrl运行完毕。');
+};
+
+xController.sina.getShortUrlCount = function(){
+	xUtil.debug.outputTxt(new Date() + ' xController.sina.getShortUrlCount开始运行');
+	
+	var appkey = T.dom.g('appkey').value;
+	var shorturl = T.dom.g('shorturl').value;
+	if(appkey == ''){
+		return xUtil.debug.outputTxt('错误：appkey不能为空！如果不熟悉，请填写4180478377', true);
+	}else if(shorturl == ''){
+		return xUtil.debug.outputTxt('错误：短链接不能为空！', true);
+	}
+	
+	xModel.sina.runShortUrlCountJsonp(shorturl, appkey);
+	xUtil.debug.outputTxt(new Date() + ' xController.sina.getShortUrlCount运行完毕。');
+};
+
+xController.sina.displayShortUrl = function(data){
+	/*
+	if(data[0].error != undefined){
+		return xUtil.debug.outputTxt('错误：API返回错误信息：' + data[0].error, true);
+	}
+	*/
+	var debugTxt = 'JSONP运行成功！得到短链接：<a href="' + data[0].url_short + '" target="_blank">' + data[0].url_short + '</a>';
+	xUtil.debug.outputTxt(debugTxt);
+	T.dom.g('shorturl').value = data[0].url_short;
+	xUtil.debug.outputTxt(new Date() + ' xController.sina.displayShortUrl运行完毕。');
+	xController.sina.getShortUrlCount();
+};
+
+xController.sina.displayShortUrlCount = function(data){
+	var debugTxt = 'JSONP运行成功！得到分享数：' + data[0].share_counts;
+	xUtil.debug.outputTxt(debugTxt);
+	T.dom.g('sharecount').innerHTML = data[0].share_counts;
+	xUtil.debug.outputTxt(new Date() + ' xController.sina.displayShortUrlCount运行完毕。');
+};
+
+xController.sina.clearShortUrl = function(){
+	T.dom.g('sharecount').innerHTML = 0;
+	T.dom.g('shorturl').value = '';
+};
+
+xController.sina.openShareLong = function(){
+	xUtil.debug.clearTxt();
+	var appkey = T.dom.g('appkey').value;
+	var longurl = T.dom.g('longurl').value;
+	if(appkey == ''){
+		return xUtil.debug.outputTxt('错误：appkey不能为空！如果不熟悉，请填写4180478377', true);
+	}else if(longurl == ''){
+		return xUtil.debug.outputTxt('错误：长链接不能为空！', true);
+	}
+	xController.sina.openShareWindow(longurl, '', appkey);
+};
+
+xController.sina.openShareShort = function(){
+	xUtil.debug.clearTxt();
+	var appkey = T.dom.g('appkey').value;
+	var shorturl = T.dom.g('shorturl').value;
+	if(appkey == ''){
+		return xUtil.debug.outputTxt('错误：appkey不能为空！如果不熟悉，请填写4180478377', true);
+	}else if(shorturl == ''){
+		return xUtil.debug.outputTxt('错误：短链接不能为空！', true);
+	}
+	xController.sina.openShareWindow(shorturl, '#分享#', appkey);
+};
+
+xController.sina.openShareWindow = function(url, title, appkey){
+	window.open('http://service.t.sina.com.cn/share/share.php?url=' + url + '&appkey=' + appkey + '&title=' + encodeURIComponent(title), '_blank','width=615,height=505');
+};
+
+xController.common = {};
+
+xController.common.openLongUrl = function(){
+	xUtil.debug.clearTxt();
+	var url = T.dom.g('longurl').value;
+	if(url == ''){
+		return xUtil.debug.outputTxt('错误：长链接不能为空！', true);
+	}
+	window.open(url, '_blank');
+};
+
+xController.common.openShortUrl = function(){
+	xUtil.debug.clearTxt();
+	var url = T.dom.g('shorturl').value;
+	if(url == ''){
+		return xUtil.debug.outputTxt('错误：短链接不能为空！', true);
+	}
+	window.open(url, '_blank');
+};
+
+
+xModel.sina = {};
+
+xModel.sina.shortUrlcallfunction = 'jsonpshorturl123';
+xModel.sina.runShortUrlJsonp = function(longurl, appkey){
+	var short_url = "http://api.t.sina.com.cn/short_url/shorten.json";
+	var short_data = "source=" + appkey + "&url_long=" + encodeURIComponent(longurl) + "&callback=" + xModel.sina.shortUrlcallfunction;
+	var url = short_url + '?' + short_data;
+	//xUtil.debug.outputTxt('开始载入JSONP：' + url);
+	xUtil.debug.outputTxt('xModel.sina.runShortUrlJsonp 开始载入JSONP');
+	jsonp(url,
+		    null,
+		    function(){
+				xUtil.debug.outputTxt(new Date() + ' xModel.sina.runShortUrlJsonp载入JSONP超时！', true);
+	    	},
+		    function(){
+	    		xUtil.debug.outputTxt(new Date() + ' xModel.sina.runShortUrlJsonp载入JSONP失败！', true);
+			},
+		    function(){
+	    		xUtil.debug.outputTxt(new Date() + ' xModel.sina.runShortUrlJsonp载入JSONP成功！');
+			}
+	);
+};
+
+xModel.sina.shortUrlCountcallfunction = 'jsonpshorturlcount123';
+xModel.sina.runShortUrlCountJsonp = function(shorturl, appkey){
+	var count_url = "http://api.t.sina.com.cn/short_url/share/counts.json";
+	var short_data = "source=" + appkey + "&url_short=" + encodeURIComponent(shorturl) + "&callback=" + xModel.sina.shortUrlCountcallfunction;
+	var url = count_url + '?' + short_data;
+	//xUtil.debug.outputTxt('开始载入JSONP：' + url);
+	xUtil.debug.outputTxt('xModel.sina.runShortUrlCountJsonp 开始载入JSONP');
+	jsonp(url,
+		    null,
+		    function(){
+				xUtil.debug.outputTxt(new Date() + ' xModel.sina.runShortUrlCountJsonp载入JSONP超时！', true);
+	    	},
+		    function(){
+				xUtil.debug.outputTxt(new Date() + ' xModel.sina.runShortUrlCountJsonp载入JSONP失败！', true);
+	    	},
+		    function(){
+	    		xUtil.debug.outputTxt(new Date() + ' xModel.sina.runShortUrlCountJsonp载入JSONP成功！');
+			}
+	);
+};
+
+function jsonpshorturl123(data){
+	xController.sina.displayShortUrl(data);
+}
+
+function jsonpshorturlcount123(data){
+	xController.sina.displayShortUrlCount(data);
+}
+
+T.event.on("submitsearch", "click", function(event){xController.sina.getShortUrl();});
+</script>
+
+</body>
+</html>
