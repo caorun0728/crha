@@ -1,0 +1,59 @@
+﻿
+<!doctype html>
+<html>
+<HEAD>
+<TITLE>下载地址在线转换</TITLE>
+<meta charset="UTF-8">
+<LINK 
+href="css/style.css" type=text/css rel=stylesheet>
+<SCRIPT src="css/jquery.js" type=text/javascript></SCRIPT>
+<SCRIPT src="css/ajax.js" type=text/javascript></SCRIPT>
+<BODY>
+<DIV id=wrap><!--/ container-->
+<DIV class=container>
+<DIV id=result>
+<DIV class=box>
+<DIV class=con>
+<DIV id=urlconvert>
+<STYLE type=text/css>#result .con #urlconvert P {
+	MARGIN-BOTTOM: 10px
+}
+#result .con #urlconvert LABEL {
+	FONT-WEIGHT: bold
+}
+#result .con #urlconvert .int {
+	WIDTH: 450px
+}
+#result .con #urlconvert #r .int {
+	FONT-WEIGHT: normal; COLOR: #333
+}
+</STYLE>
+
+<SCRIPT language=javascript src="css/base64.js"></SCRIPT>
+
+<SCRIPT language=javascript src="css/urlconvert.js"></SCRIPT>
+
+<FORM onsubmit="urlconvert();return false;" action="" method=get><LABEL 
+for=oldurl>原始地址:</LABEL> <INPUT class=int id=oldurl name=oldurl> <INPUT id=button onclick=urlconvert(); type=button value=转换 name=button> 
+<HR>
+
+<H5>只需在原始地址处输入迅雷,快车,旋风,HTTP下载地址后，点击转换 即可随意转换了</H5><BR>
+<DIV id=r>
+<P><LABEL for=newurl>真实地址:</LABEL> <INPUT class=int id=newurl 
+onclick=if(this.value){copy(this.value);} name=newurl><SPAN 
+id=down_newurl></SPAN> </P>
+<P><LABEL for=thunderurl>迅雷地址:</LABEL> <INPUT class=int id=thunderurl 
+onclick=if(this.value){copy(this.value);} name=thunderurl><SPAN 
+id=down_thunderurl></SPAN></P>
+<P><LABEL for=flashgeturl>快车地址:</LABEL> <INPUT class=int id=flashgeturl 
+onclick=if(this.value){copy(this.value);} name=flashgeturl><SPAN 
+id=down_flashgeturl></SPAN></P>
+<P><LABEL for=xuanfengurl>旋风地址:</LABEL> <INPUT class=int id=qqurl 
+onclick=if(this.value){copy(this.value);} name=qqurl><SPAN 
+id=down_qqurl></SPAN></P></DIV></FORM></DIV><!--/ urlconvert--></DIV><!--/ con--></DIV><!--/ box--></DIV><!--/ result-->
+<SCRIPT src="/url/xunlei/webThunderDetect.js"></SCRIPT>
+</DIV><!--/ container 2--><!--/ container 3--></DIV>
+<DIV align=center>
+<P><!--/ wrap--></P>
+</noscript>
+</DIV></BODY></HTML>
