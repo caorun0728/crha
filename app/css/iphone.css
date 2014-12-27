@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.hei110{ height:45px;background-size:auto 45px;}
+	.hei110 h1{height:50px; background-size:auto 50px; margin-top:0px;}
+	/*.hei110 a{ display:block;width:95px;height:25px; background-size:auto 25px;top:28%; right:2%;}*/
+	
+	.jieshao{height:90px; background-size:auto 90px;margin:30px auto auto 10px;}
+	
+	.downbox{width:100%;height:270px;background-size:auto 270px;}
+	.laycon{height:270px;background-size:auto 350px;}
+	.laycon .chanp{width:100%;height:240px; background-size:auto 240px; margin-left:15px;}
+	.laycon .chtit{height:18px;background-size:auto 18px;left:25%;}
+	.down1{height:28px;background-size:auto 28px;margin:5px auto 40px 15px;}
+	.laycon .down2{height:30px;background-size:auto 30px;left:25%;top:90px;}
+	
+	.laycon .down1 a,.laycon .down2 a{height:30px;display:block; width:130px;}
