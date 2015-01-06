@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type"
+          content="text/html; charset=UTF-8">
+    <title>Demo：一键下载到小米路由器</title>
+	<!-- 小米路由器js代码 开始-->
+    <script src="http://s.miwifi.com/d2r/js/base64.js">
+    </script>
+	<script src="https://d.miwifi.com/jquery/2.0.3/jquery-2.0.3.min.js">
+    </script>
+   <style type="text/css">
+button,
+input,
+select,
+textarea {
+	border: none;
+	
+	border-radius: none;
+	padding: 0 0 0;
+	
+}
+button,
+
+textarea {
+	font-size: 100%;
+	overflow: auto;
+	vertical-align: top;
+}
+
+   </style>
+	<!-- 小米路由器js代码 结束-->
+
+
+<script type="text/javascript">window.onerror=function(){return true;}</script></head>
+<body>
+
+小米的一天.mp4<br>
+
+100个梦想的赞助商（微电影）.mp4
+    <a href="http://v.gorouter.info/20131204/100个梦想的赞助商（微电影）.mp4">下载本地</a>
+    <button onclick="openDownloadWindow('http://v.gorouter.info/20131204/100个梦想的赞助商（微电影）.mp4', '100个梦想的赞助商（微电影）.mp4')">
+        小米路由器
+    </button>
+
+    <script>
+        function openDownloadWindow(url, name) {
+            window.open("https://d.miwifi.com/d2r/?url=" + Base64.encodeURI(url) + "&src=demo" + "&name=" + encodeURIComponent(name), "", "", true);
+        }
+    </script>
+</body>
+</html>
