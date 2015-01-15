@@ -1,0 +1,33 @@
+@charset "utf-8";
+html, body, nav, ul, li, h2, h3, figure,header { padding: 0px; margin: 0px; }
+body { min-width: 320px; font: normal 14px/1.5 "微软雅黑", Verdana, "Microsoft Yahei", STXihei; color: #333333; background: #fff; overflow-x: hidden; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-size-adjust: none; -moz-user-select: none; }
+img { border: none }
+a { color: #000; text-decoration: none; }
+li { list-style-type: none; }
+header { width: 100%; position:fixed;background:#334466; line-height:50px; color:#ffce54; text-align:center; font-size:20px;}
+footer { margin-top: 20px; line-height: 30px; text-align: center; font-size:13px; color:#999999;}
+article,hgroup,section{display:block;}
+hgroup h1{ font-size:16px; font-family:"宋体"; padding:8px 10px; margin:0px; background:#f1f1f1;}
+.carinforlist{display:block;background:#fff; position:relative; border-top:1px solid #cccccc;border-bottom:1px solid #cccccc; margin-bottom:-1px;}
+.carinforlist .carimg{ position:absolute; width:70px; height:50px;left:0px; top:12px;text-align:center; font-size:14px; color:#494949;}
+.carinforlist p{ padding:0px; margin:0px; font-size:12px;}
+.base_price{font-size: 15px;color: #FF5600;line-height: 18px;}
+.carinforlist .carinfor{ margin-left:71px;padding:4px 0px 4px 10px; }
+.carinforlist .listlabel{ position:absolute; width:20px; height:26px; right:15px;top:20px;line-height:26px; text-align:center;}
+.carinforlist .listlabel::after{position:absolute; overflow: hidden;content: "";width:8px;height:8px;border-bottom:2px solid #C1C1C1;border-left:2px solid #C1C1C1;margin-top:5px;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-moz-transform: rotate(-45deg);transform: rotate(-45deg);}
+.carinforlist .listlabel.affter::after{border-top:2px solid #C1C1C1;border-right:2px solid #C1C1C1; border-bottom:none;border-left:none; }
+.p10{ padding:10px; margin:0px;}
+header a{display:block;position: absolute;overflow: hidden; width:45px;}
+header a::after{position: absolute;overflow: hidden;content: "";width:15px;height:15px;border-top: 4px solid #ffce54; margin-top:14px; margin-left:-10px;border-left: 4px solid #ffce54;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-moz-transform: rotate(-45deg);transform: rotate(-45deg);}
+.jginfor{ padding:0px 15px;}
+.jginfor dt,.jginfor dd{ padding:0px; margin:0px; line-height:25px;}
+.jginfor dd{ color:#a3b3c6;}
+p.carinforlist{ margin-left:15px; padding:10px 10px 10px 2px;}
+.fontgz{ padding:10px 15px; font-size:16px; line-height:30px;}
+.fontgz strong{ display:block; padding-top:15px;}
+.ac{ text-align:center}
+.f14{ font-size:14px; padding:0px;margin:0px;}
+.f18{ font-size:18px; line-height:35px; padding:0px; margin:0px;}
+.fc3e454d{ color:#3e454d;}
+.fc334466{ color:#334466}
+.mx_infortow{ display:none;border-top: 1px solid #cccccc; padding:6px 0px 6px 80px; color:#494949}
