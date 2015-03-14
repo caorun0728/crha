@@ -1,0 +1,108 @@
+/* CSS Document */
+
+/* add fontface fonts here */
+
+/* classnames to reference special fonts used for fontface and google - change font-family as needed, keep classnames and add .webfont4, webfont5 etc if more is needed */
+
+.downloadicon {
+	/*font-family: 'agencyfbregular';*/
+	font-family: "futura-pt", sans-serif;
+}
+
+.webfont1 {
+	/*font-family: 'agencyfbregular';*/
+	font-family: "futura-pt", sans-serif;
+}
+
+.webfont2 {
+	    font-family: "futura-pt", sans-serif;
+}
+
+.webfont3 {
+	font-family: "ltc-bodoni-175", serif;
+}
+
+/* floats */
+
+.fleft {
+	float:left;	
+}
+
+.fright {
+	float:right;	
+}
+
+.clear {
+	clear:both;	
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* FONT VARIANTS */
+
+.bold {
+	font-weight: bold !important;	
+}
+
+.ital {
+	font-style: italic !important;	
+}
+
+.scored {
+	text-decoration: underline !important;	
+}
+
+.text-left {
+	text-align:left !important;	
+}
+
+.text-center {
+	text-align:center !important;	
+}
+
+.text-right {
+	text-align:right !important;	
+}
+
+.caps {
+	text-transform: uppercase !important;	
+}
+
+.pad6 {
+	padding-bottom: 6px !important;	
+}
+
+.pad12 {
+	padding-bottom: 12px !important;	
+}
+
+.pad20 {
+	padding-bottom: 20px !important;	
+}
+
+.white {
+	color: #fff !important;	
+}
+
+.black {
+	color: #000 !important;	
+}
+
+
+/* FONT SIZES - from 5px - 100px - add class f[x] to an element where x is font size to force a different font size */
+
+.f5 {font-size: 5px !important;}.f6 {font-size: 6px !important;}.f7 {font-size: 7px !important;}.f8 {font-size: 8px !important;}
+.f9 {font-size: 9px !important;}.f10 {font-size: 10px !important;}.f11 {font-size: 11px !important;}.f12 {font-size: 12px !important;}.f13 {font-size: 13px !important;}.f14 {font-size: 14px !important;}.f15 {font-size: 15px !important;}.f16 {font-size: 16px !important;}.f17 {font-size: 17px !important;}.f18 {font-size: 18px !important;}.f19 {font-size: 19px !important;}.f20 {font-size: 20px !important;}.f21 {font-size: 21px !important;}.f22 {font-size: 22px !important;}.f23 {font-size: 23px !important;}.f24 {font-size: 24px !important;}.f25 {font-size: 25px !important;}.f26 {font-size: 26px !important;}.f27 {font-size: 27px !important;}.f28 {font-size: 28px !important;}.f29 {font-size: 29px !important;}.f30 {font-size: 30px !important;}.f31 {font-size: 31px !important;}.f32 {font-size: 32px !important;}.f33 {font-size: 33px !important;}.f34 {font-size: 34px !important;}.f35 {font-size: 35px !important;}.f36 {font-size: 36px !important;}.f37 {font-size: 37px !important;}.f38 {font-size: 38px !important;}.f39 {font-size: 39px !important;}.f40 {font-size: 40px !important;}.f41 {font-size: 41px !important;}.f42 {font-size: 42px !important;}.f43 {font-size: 43px !important;}.f44 {font-size: 44px !important;}.f45 {font-size: 45px !important;}.f46 {font-size: 46px !important;}.f47 {font-size: 47px !important;}.f48 {font-size: 48px !important;}.f49 {font-size: 49px !important;}.f50 {font-size: 50px !important;}.f51 {font-size: 51px !important;}.f52 {font-size: 52px !important;}.f53 {font-size: 53px !important;}.f54 {font-size: 54px !important;}.f55 {font-size: 55px !important;}.f56 {font-size: 56px !important;}.f57 {font-size: 57px !important;}.f58 {font-size: 58px !important;}.f59 {font-size: 59px !important;}.f60 {font-size: 60px !important;}.f61 {font-size: 61px !important;}.f62 {font-size: 62px !important;}.f63 {font-size: 63px !important;}.f64 {font-size: 64px !important;}.f65 {font-size: 65px !important;}.f66 {font-size: 66px !important;}.f67 {font-size: 67px !important;}.f68 {font-size: 68px !important;}.f69 {font-size: 69px !important;}.f70 {font-size: 70px !important;}.f71 {font-size: 71px !important;}.f72 {font-size: 72px !important;}.f73 {font-size: 73px !important;}.f74 {font-size: 74px !important;}.f75 {font-size: 75px !important;}.f76 {font-size: 76px !important;}.f77 {font-size: 77px !important;}.f78 {font-size: 78px !important;}.f79 {font-size: 79px !important;}.f80 {font-size: 80px !important;}.f81 {font-size: 81px !important;}.f82 {font-size: 82px !important;}.f83 {font-size: 83px !important;}.f84 {font-size: 84px !important;}.f85 {font-size: 85px !important;}.f86 {font-size: 86px !important;}.f87 {font-size: 87px !important;}.f88 {font-size: 88px !important;}.f89 {font-size: 89px !important;}.f90 {font-size: 90px !important;}.f91 {font-size: 91px !important;}.f92 {font-size: 92px !important;}.f93 {font-size: 93px !important;}.f94 {font-size: 94px !important;}.f95 {font-size: 95px !important;}.f96 {font-size: 96px !important;}.f97 {font-size: 97px !important;}.f98 {font-size: 98px !important;}.f99 {font-size: 99px !important;}.f100 {font-size: 100px !important;}
+
