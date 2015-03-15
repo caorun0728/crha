@@ -6,9 +6,9 @@
 
 <!-- GENERAL PAGE SETTINGS -->
 <studio>universal</studio>
-<siteurl>http://www.fiftyshades-movie.co.uk/</siteurl> <!-- SITE URL - include slash at end -->
+<siteurl>http://cr.ha.cn/50/</siteurl> <!-- SITE URL - include slash at end -->
 
-<baseurl>http://images.fiftyshadesofgreymovie-intl.com/version-21/uk/images/</baseurl> <!-- IMAGES URL - include slash at end -->
+<baseurl>http://cr.ha.cn/50/images/</baseurl> <!-- IMAGES URL - include slash at end -->
 <!--<baseurl>images/</baseurl>-->
 
 <bodybackgroundcolor>#000</bodybackgroundcolor> <!-- PAGE BACKGROUND COLOR - include # for hex -->
