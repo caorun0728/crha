@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+@import "normalize.css";
+
+html,body{
+	height: 100%;
+	background: #FFF;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* html div#container{
+    height:100%;
+}
+
+img {
+	margin: 0px;
+	padding: 0px;
+	-ms-interpolation-mode: bicubic;
+    behavior: expression(IEPNGFIX.fix(this));
+	border: none;
+}
+
+div#container{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	min-height: 100%;
+}
+body > #container {
+        height: auto;
+}
+
+body{
+	background:url(../img/wh_bg.jpg);
+}
+
+img {
+	margin: 0px;
+	padding: 0px;
+	-ms-interpolation-mode: bicubic;
+    behavior: expression(IEPNGFIX.fix(this));
+	border: none;
+}
+
+#wrap{
+	display: block;
+	width: 100%;
+	position: relative;
+	height: auto !important; /*IE6対策*/
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#main {
+	/*height: 645px;*/
+	height: 740px;
+	width: 100%;
+	/*min-width: 1120px;*/
+	min-width: 1040px;
+	padding: 0;
+	position: relative;
+	background: #FFF url(../img/bg.jpg) no-repeat Center Top;
+	background-size: cover;
+}
+
+
+
+/*#main img{
+	height: 100%;
+	width: 100%;
+}*/
+
+
+
+#main #logo-box{
+	width:560px;
+	background:url(../img/logo.png) no-repeat;
+	position:absolute;
+	left:2%;
+	bottom:40%;
+}
+
+
+
+#main #logo-box #enter{
+	/*display:none;*/
+	width:377px;
+	height:150px;
+	background:url(../img/b_enter.png) no-repeat ;
+	display:block;
+	margin:200px 0 0 68px;
+}
+
+
+/*トレーラーリンクの設定*/
+
+#main #trailer{
+	width:234px;
+	height:62px;
+	/*background:url(../img/bnr_trailer.png) no-repeat center bottom;
+	cursor:pointer;*/
+	margin:0px 0 45px 155px;
+}
+
+/**/
+
+#main #logo-box #menu{
+	/*width:466px;
+	height:250px;
+	background:url(../img/menu_box.png) no-repeat;
+	position:relative;
+	margin:190px auto 0;
+	padding-top:36px;*/
+	display:none;
+}
+
+#logo-box #menu li{
+	margin-left:38px;
+	list-style-type:none;
+}
+
+#logo-box #menu #mes{
+	width:360px;
+	height:38px;
+	display:block;
+	background:url(../img/mes1.png) no-repeat;
+	cursor:pointer;cursor:hand;
+}
+
+#logo-box #menu #mes-wrap{
+	width:360px;
+	height:38px;
+	display:block;
+	/*background:url(../img/mes2.png) no-repeat;*/
+}
+
+
+#logo-box #menu #intro{
+	width:360px;
+	height:38px;
+	display:block;
+	background:url(../img/intro1.png) no-repeat;
+	cursor:pointer;cursor:hand
+}
+
+#logo-box #menu #intro-wrap{
+	width:360px;
+	height:38px;
+	display:block;
+	/*background:url(../img/chara2.png) no-repeat;*/
+}
+
+#logo-box #menu #chara{
+	width:360px;
+	height:38px;
+	display:block;
+	background:url(../img/chara1.png) no-repeat;
+	cursor:pointer;cursor:hand
+}
+
+#logo-box #menu #chara-wrap{
+	width:360px;
+	height:38px;
+	display:block;
+	/*background:url(../img/chara2.png) no-repeat;*/
+}
+
+#logo-box #menu #music{
+	width:361px;
+	height:44px;
+	display:block;
+	background:url(../img/music1.png) no-repeat;
+	cursor:pointer;cursor:hand
+}
+
+#logo-box #menu #music-wrap{
+	width:361px;
+	height:44px;
+	/*background:url(../img/music2.png) no-repeat;*/
+}
+
+
+#logo-box #menu #exh{
+	width:361px;
+	height:44px;
+	display:block;
+	background:url(../img/exh1.png) no-repeat;
+	cursor:pointer;cursor:hand
+}
+
+#logo-box #menu #exh-wrap{
+	width:361px;
+	height:44px;
+	/*background:url(../img/exh2.png) no-repeat;*/
+}
+
+#logo-box #menu #list{
+	width:361px;
+	height:44px;
+	display:block;
+	background:url(../img/list1.png) no-repeat;
+	cursor:pointer;cursor:hand
+}
+
+#logo-box #menu #list-wrap{
+	width:361px;
+	height:44px;
+	/*background:url(../img/list2.png) no-repeat;*/
+}
+
+
+#wrap #banner{
+	position:absolute;
+	bottom:3.5%;
+	left:2%;
+	text-align:left;
+	width:95%;
+	height:55px;
+}
+
+
+
+
+/*フッターバナーエリアの設定*/
+
+#wrap #banner ul li{
+	list-style-type:none;
+	margin-left:10px;
+	height:50px;
+	float:left;
+}
+
+#wrap #banner ul #eyeful{
+	width:300px;
+	background:url(../img/eyeful300-50.jpg) no-repeat left top;
+	cursor:pointer;
+}
+
+#wrap #banner ul #au{
+	width:150px;
+	background:url(../img/au150-50.jpg) no-repeat left top;
+	cursor:pointer;
+}
+
+/*@media screen and (max-device-width: 480px) {
+
+#main #logo-box{
+	width:560px;
+	background:url(../img/logo.png) no-repeat;
+	position:absolute;
+	left:0;
+	bottom:24%;
+}
+
+	
+	
+#main #logo-box #menu{
+	display:none;
+}
+
+#main #logo-box #enter{
+	width:377px;
+	height:130px;
+	background:url(../img/b_enter.png) no-repeat;
+	display:block;
+	margin:205px auto 50px;
+}
+
+}*/
+
+
+.noSelect {
+	user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	display:none;
+}
+
+#staff li{
+	display:none;
+}
+
+
+
+

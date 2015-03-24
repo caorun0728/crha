@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background:#F3F8FC;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color:#333333;
+}
+
+.cont-wrap{
+	position:relative;
+	background:url(../dvdbd/img/bg.gif) no-repeat left -34px;
+}
+
+.cont-area{
+	width:850px;
+	height:500px;
+	text-align:center;
+	overflow:hidden;
+	position:relative;	
+}
+
+.btn-area{
+	width:850px;
+	height:70px;
+	background:#C7E7F1;
+	overflow:hidden;
+	position:absolute;
+	top:500px;
+	left:0px;
+	z-index:10;
+}
+
+.btn-area ul{
+	margin:11px 0 0 12px;
+	padding:0;
+}
+
+.btn-area ul li{
+	float:left;
+	list-style-type:none;
+	margin:0 8px 0 0;
+}
+
+
+.btn-area ul li#b1{
+	width:130px;
+	height:50px;
+	background:url(../dvdbd/img/_cm/b1_on.gif);
+}
+
+.btn-area ul li#b2{
+	width:130px;
+	height:50px;
+	background:url(../dvdbd/img/_cm/b2_on.gif);
+}
+
+.btn-area ul li#b3{
+	width:130px;
+	height:50px;
+	background:url(../dvdbd/img/_cm/b3_on.gif);
+}
+
+.btn-area ul li#b4{
+	width:130px;
+	height:50px;
+	background:url(../dvdbd/img/_cm/b4_on.gif);
+}
+
+.btn-area ul li#b5{
+	width:130px;
+	height:50px;
+	background:url(../dvdbd/img/_cm/b5_on.gif);
+}
+
+.btn-area ul li#b6{
+	width:130px;
+	height:50px;
+	background:url(../dvdbd/img/_cm/b6_on.gif);
+}
+
+
+
+#left_txt{
+	position:absolute;
+	top:50px;
+	left:50px;
+	z-index:2;
+}
+
+#t1{
+	position:absolute;
+	top:42px;
+	right:52px;
+	z-index:2;
+}
+
+#main-txt01{
+	width:610px;
+	height:340px;
+	background:url(../dvdbd/img/_cm/01_bg.png) no-repeat left 10px;
+	padding-top:67px;
+	position:absolute;
+	top:80px;
+	right:22px;
+}
+
+#main-txt01 p{
+	margin:0 0 1.2em 38px;
+	text-align:left;
+	font-size:0.9em;
+	line-height:1.4em;
+}
+
+#main-txt01 span{
+	font-size:0.8em;
+}
+
+#t2{
+	margin-top:50px;
+}
+
+#comment02{
+	margin:38px auto 30px;
+}
+
+#profile{
+	width:620px;
+	background:url(../dvdbd/img/_cm/02_prof_bg.png);
+	border:solid 1px #DBF0F7;
+	margin:0 auto;
+}
+
+#profile p{
+	width:590px;
+	margin:5px auto 10px;
+	text-align:left;
+	color:#1563B0;
+	font-size:0.7em;
+	line-height:1.3em;
+}
+
+#profile p span#name{
+	font-size:1.2em;
+	letter-spacing:0.1em;
+	line-height:1.8em;
+}
+
+.cont-area iframe{
+	margin:35px auto 0;
+	border:solid 1px #C7E7F1;
+}
+
+
+p#caution{
+	width:760px;
+	margin:10px auto 0;
+	text-align:right;
+	color:#37AED0;
+	font-size:0.6em;
+	line-height:1.3em;
+}
+
+.dn{
+	display:none;
+}

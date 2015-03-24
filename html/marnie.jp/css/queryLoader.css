@@ -1,0 +1,5 @@
+
+.QOverlay {
+	background: #FFFFFF url(../img/load.gif) no-repeat Center Center;
+	z-index: 9999;
+}

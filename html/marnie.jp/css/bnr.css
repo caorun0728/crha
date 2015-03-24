@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+
+#main #bnr{
+	width:165px;
+	height:163px;
+	background:url(../img/bnr_dvdbd.png) no-repeat;
+	display:block;
+	float:right;
+	margin-top:-470px;
+	margin-right:30px;
+	/*margin-right:-48px;*/
+}
+
+#main #bnr_2{
+	width:165px;
+	height:163px;
+	background:url(../img/bnr_dvdbd_2.png) no-repeat;
+	display:block;
+	float:right;
+	margin-top:-470px;
+	margin-right:30px;
+	/*margin-right:-48px;*/
+}
+
+#main #bnr_cm{
+	width:140px;
+	height:138px;
+	background:url(../img/bnr_cm.png) no-repeat;
+	display:block;
+	position:absolute;
+	right:-110px;
+	top:-50px;
+	cursor:pointer;
+}
+
+
+
+
+
