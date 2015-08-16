@@ -1,0 +1,81 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网址缩短工具</title>
+<style>
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,button,p,blockquote,th,td {margin:0; padding:0}
+ul,ol,li{list-style:none;}
+body{font-size:12px; margin:0px; color:#343434; padding:0px;  background:#6CC url(images/bg.gif);}
+a{color:#FC0;}
+p{ margin:0px; padding:5px 0;}
+img{border:0;}
+#ubox{width:520px; overflow:hidden; margin:0px auto;  padding:10px 10px 10px 10px; }
+.ucon{border:1px solid #003; overflow:hidden;height:190px; background-color:#FFF;background:#FFF url(images/cbg.gif);}
+.ahead{ height:30px;  color:#FFF;background:#06C url(images/headbg.gif) repeat-x 0 center; line-height:30px; padding:0 10px;font-size:16px; font-weight:bold; color:#FF0; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; text-align:center; letter-spacing:2px;}
+.con{  padding:5px 10px;} 
+.table{border-collapse:collapse;border:#E6E6E6 solid 1px;} .table td{border:#E6E6E6 solid 1px;} 
+.cl5{ clear:both; height:5px; overflow:hidden;}
+#sobar{ width:420px; height:36px; background:url(images/sbg.gif) no-repeat; margin:10px auto;}
+#kw{ width:319px; height:20px; *line-height:20px; display:inline-block; float:left; margin:6px 7px 0 6px; outline:none; padding-left:3px; *padding-top:2px; }
+#btn{ width:70px; height:35px; overflow:hidden; display:inline-block; float:left; cursor:pointer; border:0px; background:none;}
+.cbtn{ background:#36F; width:40px; height:20px; line-height:20px; text-align:center; color:#FFF; border:none; cursor:pointer;}
+.cbtn:hover{ background:#39F;}
+.copy-tips{ width:120px; height:30px; line-height:30px; text-align:center; background-color:#FF0; border:3px solid #CCC; position:absolute; top:20px; left:48%;}
+</style>
+<script type="text/javascript">
+function setdwz(id){document.getElementById("dwz").value=id;}
+function m(){document.getElementById("more").checked = "checked";}
+</script>
+</head>
+<body>
+<div id="ubox">
+  <div class="ucon">
+  <div id="s1">
+     <div class="ahead">网址缩短工具</div>
+     <div class="con">
+     <form action="" id="form" method="post" onsubmit="return false;"><div id="sobar"><input name="kw" type="text" size="20" onfocus="javascript:if(this.value=='请在此输入网址'){this.value=''}" onblur="javascript:if(this.value==''){this.value='请在此输入网址'}" value="请在此输入网址" id="kw" /> <input name="" id="btn" type="submit" value="  " /></div>
+      <div align="center"><input name="dwz" id="dwz" type="hidden" value="985.so" /><input name="hz" id="hz" type="hidden" value=".com" />
+       网址类型：<label><input name="type" id="mytcn" type="radio" onclick="setdwz('t.cn')" value="t.cn"  />t.cn</label>
+        <label>
+          <input name="type" type="radio" onclick="setdwz('url.cn')" value="" />url.cn</label>
+          <label><input name="type" type="radio" onclick="setdwz('985.so')" value="" checked="checked" />985.so</label>
+          <label><input name="type" type="radio" onclick="setdwz('is.gd')" value=""  />is.gd</label><label><input name="type" type="radio" onclick="setdwz('url7.me')" value=""  />url7.me</label>
+          <label><input type="radio" name="type" value="more" id="more" class="hz" /></label><select onchange="setdwz(this.value);m();" id="mhz" name="mhz">
+          <option value="cnrdn.com">更多类型</option>
+          <option value="cnrdn.com" class="mv">cnrdn.com</option>
+        
+            <option value="tinyurl.com" class="mv">tinyurl.com</option>
+     
+            <option value="to.ly" class="mv">to.ly</option>
+          </select>
+      </div>
+      <div id="tips"align="center" style="color:#F60; padding-top:15px; line-height:180%;">
+  可缩短所有互联网地址，新版本，更快速、更稳定！<br />
+强烈推荐收藏本工具！[<a style="color:#33F; " href="desktop.php" target="_blank">创建桌面快捷方式</a>]
+      </div>
+ 
+        <div id="res" align="center" style=" padding-top:8px;"><span id="loading"></span><div id="url_res" style=" line-height:220%;display:none;">
+<span>缩短后的网址是：<a id="urllink" style="color:#F00; " href="#" target="_blank"></a><input id="linkinput" class="copy-input" type="hidden" value="nourl"  /> &nbsp; <input class="cbtn copy" rel="urllink" type="submit" value="复制" /></span><br />
+<div id="url7box" style="padding-bottom:40px;">该网址<span style="color:#F00">红色字</span>部分支持自定义，如：<span style="color:#F00">http://zhidao.baidu.com<span id="url7x" style="color:#333">.url7.me/xxxx?</span>123.html</span></div>
+UBB代码：<span><input id="ubbcode" class="copy-input" name="ubbcode" type="text" value="" size="15" /> <input class="cbtn copy" rel="ubbcode" id="copyubb" type="submit" value="复制" /> </span>
+
+ HTML代码：<span><input id="htmlcode" class="copy-input" name="htmlcode" type="text" value="" size="15" /> 　<input class="cbtn copy" rel="htmlcode" id="copyhtml" type="submit" value="复制" /></span>
+</div></div>
+      </form>
+     </div>
+
+  </div><!--s1-->
+ 
+  </div><!--ucon-->
+</div><div id="st" style="display:none;"></div><div id="sta" style="display:none;"></div>
+<script src="http://lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
+<script src="common.js"></script>
+<div style="display:none">
+<script src="http://app.baidu.com/static/appstore/monitor.st"></script>
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/15229031.js"></script>
+</div>
+</body>
+</html>
