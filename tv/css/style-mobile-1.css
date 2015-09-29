@@ -1,0 +1,13 @@
+body {
+    font-size: 0.8em;
+}
+
+#logo {
+    height: 5em;
+    width: 5em;
+    margin-bottom: 0.5em;
+}
+
+#header nav li {
+    width: 6.5em;
+}
