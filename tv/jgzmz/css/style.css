@@ -1,0 +1,185 @@
+@charset "utf-8";
+body {
+	background:url(../bg_new.jpg) fixed no-repeat center;
+	background-size:cover;
+	margin: 0;
+	padding: 0;
+	font-size:20px;
+	background-color: #000;
+	font-family: "PingHei","Lucida Grande", "Lucida Sans Unicode", "Helvetica","Arial","Verdana","sans-serif";
+}
+@font-face {
+	font-family:'PingHei';
+	font-style:normal;
+	font-weight:200;
+	src:local('☺︎'), url("//ospiper.wicp.net/fonts/PingHei-light.woff") format("woff"), url("//ospiper.wicp.net/fonts/PingHei-light.ttf") format("truetype");
+	/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
+}
+.caption {
+	display:none;
+}
+
+.coming_soon {
+	position:absolute;  
+   	top:50%;  
+   	left:50%;  
+   	margin-top:-112.5px;  
+   	margin-left:-277.5px;  
+    width:555px;  
+    height:225px;
+}
+
+.dlbox {
+	position:absolute;
+	display:none;
+	top:50%;
+	left:50%;
+	margin-top:-131.5px;
+	margin-left:-287.5px;
+	width:575px;
+	height:263px;
+	opacity:0.85;
+	z-index:99999;
+}
+
+.logo {
+	position:absolute;
+	margin-top:-50px;
+	left:80px;
+	height:329px;
+	width:400px;
+}
+
+.button {
+	display:inline;
+	bottom:120px;
+	color:#fff;
+}
+
+.divider {
+	display:inline;
+	bottom:120px;
+	color:#fff;
+}
+
+.footer {
+	position:absolute;
+	bottom:20px;
+	width:100%;
+	color:#eee;
+	opacity:0.8;
+}
+
+.button1 {
+	width:300px;
+	height:65px;
+	background:url(../images/test.png) no-repeat;
+	border:none;
+}
+
+.button1:hover {
+	background:url(../images/test_btn.png) no-repeat;
+	cursor:pointer;
+}
+
+.button2 {
+	width:401px;
+	height:65px;
+	background:url(../images/dl.png) no-repeat;
+	border:none;
+}
+.button2:hover {
+	background:url(../images/dl_btn.png) no-repeat;
+	cursor:pointer;
+}
+
+.player {
+	position:absolute;
+	margin-top:70px;
+	background:url(../images/player.png) no-repeat;
+	right:140px;
+	height:65px;
+	width:365px;
+	color:#fff;
+}
+
+.title {
+	position:absolute;
+	font-size:24px;
+	top:18px;
+	left:20px;
+}
+
+.title > .singer {
+	font-size:15px;
+}
+
+#play-pause {
+	color: #fff;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	text-align: center;
+	text-shadow: 1px 1px 3px #000;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	width: 46px;
+	height: 46px;
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+}
+	
+#play-pause:hover {
+	color:#6969F1;
+}
+
+.play {
+	position:absolute;
+	line-height:46px;
+	width:46px;
+	height:46px;
+	top:10px;
+	right:18px;
+}
+
+@media only screen and (max-width: 985px) {
+.player {
+	display:none;
+}
+
+.logo {
+	position:absolute;
+	margin-top:-50px;
+	left:0px;
+	height:329px;
+	width:100%;
+	text-align:center;
+}
+
+.divider {
+	display:none;
+}
+
+.caption {
+	display:block;
+}
+}
+
+@media only screen and (max-height: 660px) {
+.coming_soon {
+	top:340px;
+	text-align:center;
+	position:absolute;  
+}
+
+.footer {
+	position:absolute;
+	top:500px;
+	width:100%;
+}
+
+.caption {
+	display:block;
+}
+}
