@@ -7,6 +7,7 @@ CR.HA.CN
 更新update：
 ========
 
+* 2015-12-14 添加子域名TV.CR.HA.CN指向文件夹tv。同时unwatch
 * 2015-12-06 加入readme.md文档。
 * 2015-10-06 加入CR.HA.CN/TV文档作为个人影视列表。
 
