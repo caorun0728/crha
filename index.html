@@ -1,1 +1,26 @@
-±æ”Ú√˚‘›Œ¥∆Ù”√
+Ôªø<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus¬Æ">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <span class="nv">$ </span>curl -i http://git.io -F <span class="s2">"url=https://github.com/caorun0728/crha/"</span>HTTP/1.1 <span class="m">201</span> CreatedLocation: http://git.io/crha<span class="nv">$ </span>curl -i http://git.io/crhaHTTP/1.1 <span class="m">302</span> FoundLocation: https://github.com/caorun0728/crha/
+
+<span class="nv">$ </span>curl -i http://git.io -F <span class="s2">"url=https://github.com/caorun0728/crha/"</span>
+
+HTTP/1.1 <span class="m">201</span> Created
+
+Location: http://git.io/crha
+
+<span class="nv">$ </span>curl -i http://git.io/crha
+
+HTTP/1.1 <span class="m">302</span> Found
+
+Location: https://github.com/caorun0728/crha/
+ </body>
+</html>
