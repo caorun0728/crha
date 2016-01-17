@@ -6,7 +6,7 @@
 /* FONT
 =============================================================================*/
 .Windows body {
-	font-family: Helvetica, arial, freesans, clean, sans-serif;;
+	font-family: 'Microsoft YaHei', "Helvetica", arial;
 }
 .Macintosh body {
 	font-family: 'HiraginoSansGB-W3', sans-serif;
@@ -274,7 +274,7 @@ img {
 
 
 
-/*	ÓÊÏä´úÂë
+/*	Ã“ÃŠÃÃ¤Â´ÃºÃ‚Ã«
 =============================================================================*/
 email:after {content: "@caorun.net.cn";}
 
