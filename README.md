@@ -1,21 +1,20 @@
-CR.HA.CN
-========
-ÃâÔðÉùÃ÷£º
-* ±¾ÄÚÈÝ¾ùÎª¸öÈËÑ§Ï°²Î¿¼ÓÃÍ¾£¬ÇëÎðÓÃÓÚ²»µ±¡£
-* ÈçÓÐÇÖ·¸Çë¸æÖª¡£
+##CR.HA.CN
 
-¸üÐÂupdate£º
-========
+å…è´£å£°æ˜Žï¼š
 
-* 2015-12-14 Ìí¼Ó×ÓÓòÃûTV.CR.HA.CNÖ¸ÏòÎÄ¼þ¼Ðtv¡£Í¬Ê±unwatch¡£Ë³±ãÀ­È¡Òì²î
-* 2015-12-06 ¼ÓÈëreadme.mdÎÄµµ¡£
-* 2015-10-06 ¼ÓÈëCR.HA.CN/TVÎÄµµ×÷Îª¸öÈËÓ°ÊÓÁÐ±í¡£
+* æœ¬å†…å®¹å‡ä¸ºä¸ªäººå­¦ä¹ å‚è€ƒç”¨é€”ï¼Œè¯·å‹¿ç”¨äºŽä¸å½“ã€‚
+* å¦‚æœ‰ä¾µçŠ¯è¯·å‘ŠçŸ¥ã€‚
+
+##æ›´æ–°updateï¼š
+
+* 2015-12-14 æ·»åŠ å­åŸŸåTV.CR.HA.CNæŒ‡å‘æ–‡ä»¶å¤¹tvã€‚åŒæ—¶unwatchã€‚é¡ºä¾¿æ‹‰å–å¼‚å·®
+* 2015-12-06 åŠ å…¥readme.mdæ–‡æ¡£ã€‚
+* 2015-10-06 åŠ å…¥CR.HA.CN/TVæ–‡æ¡£ä½œä¸ºä¸ªäººå½±è§†åˆ—è¡¨ã€‚
 
 
-ÏÂÔØÔ´Âë
-========
+##ä¸‹è½½æºç 
 
-0.1°æ±¾
+0.1ç‰ˆæœ¬
 https://codeload.github.com/caorun0728/crha/zip/0.1
 
 or
