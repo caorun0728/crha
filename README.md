@@ -8,6 +8,7 @@
 
 ##更新update：
 
+* 2016-02-21 彻底删除gouwudan.html页面。
 * 2015-12-14 添加子域名TV.CR.HA.CN指向文件夹tv。同时unwatch。顺便拉取异差
 * 2015-12-06 加入readme.md文档。
 * 2015-10-06 加入CR.HA.CN/TV文档作为个人影视列表。
