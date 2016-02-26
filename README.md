@@ -4,12 +4,15 @@
 
  :bowtie:
 
-- [x] 禁止拷贝
-- [x] 禁止FORK
-- [ ] 可以用在非商业用途！
-
 本页面的首页为[en/index.html](./en)
 
 
 thanks you!
+
+##License
+
+- [x] 禁止拷贝
+- [x] 禁止FORK
+
+E-mail:  <a href="mailto:caorun728@gmail.com" target="_blank">caorun728@gmail.com</a>
 
