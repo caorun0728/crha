@@ -3,51 +3,6 @@
 /* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
 /* Source: https://github.com/nicolahery/markdownpad-github */
 
-/* FONT
-=============================================================================*/
-.Windows body {
-	font-family: 'Microsoft YaHei', Helvetica, arial, sans-serif;
-}
-.Macintosh body {
-	font-family: 'HiraginoSansGB-W3', sans-serif;
-}
-
-@font-face {
-	font-family: WyueLogo;
-	src: local('?'), url('../font/WyueLogo.otf') format('opentype');
-}
-@font-face {
-	font-family: SHSCN-Light;
-	src: local('?'), url('../font/SHSCN-Light.otf') format('opentype');
-}
-@font-face {
-	font-family: SHSCN-Normal;
-	src: local('?'), url('../font/SHSCN-Normal.otf') format('opentype');
-}
-@font-face {
-	font-family: SHSCN-Regular;
-	src: local('?'), url('../font/SHSCN-Regular.otf') format('opentype');
-}
-@font-face {
-	font-family: TypeTitle-WyueGutiFangsong;
-	src: local('?'), url('../font/TypeTitle-WyueGutiFangsong.otf') format('opentype');
-}
-@font-face {
-	font-family: TypeTitle-TpldKhangXiDict;
-	src: local('?'), url('../font/TypeTitle-TpldKhangXiDict.otf') format('opentype');
-}
-@font-face {
-	font-family: TypeTitle-TpldYiFengScripture;
-	src: local('?'), url('../font/TypeTitle-TpldYiFengScripture.otf') format('opentype');
-}
-@font-face {
-	font-family: TypeTitle-TpldLehBienLehsho;
-	src: local('?'), url('../font/TypeTitle-TpldLehBienLehsho.otf') format('opentype');
-}
-
-h1.WyueLogo { font-family: WyueLogo, serif; }
-p.WyueLogo { font-family: WyueLogo, serif; }
-
 
 /* RESET
 =============================================================================*/
