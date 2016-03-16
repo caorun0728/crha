@@ -1,4 +1,4 @@
-
+﻿
 <%
 --[[
 
@@ -77,7 +77,7 @@ font-size: 14px;
 	<ul class="ullist" style="position:relative">
             <li class="error-box">
                 <div class="info">
-                    <p text-align:center> </a></p>
+                    <p text-align:center> </p>
                     <p text-align:center> </p>
                     
                 </div>
@@ -87,6 +87,16 @@ font-size: 14px;
                     <%=sstestresult%>
                 </div>
             </li>
+				<li class="error-box">
+                <div class="info">
+                   
+	<p><label><B>本插件由 曹润 改造 </B></label></p>
+
+	<p><label><B>www.caorun.net </B></label></p>
+
+
+                </div>
+            </li><br><br>
 	<li class="ipt_from">
     	    <div  class="memu row" id="cfg_box">
             	<p class="item-txt"><span class="on-off" style="font-size:14px;">开机自启动<button type="button" class="<% if ss_enable=="1" then io.write("on"); else io.write("off") end %>" style="margin-left:20px;">开关</button></span></p>        <input type="hidden" value="<% if ss_enable=="1" then io.write("enable"); else io.write("disable") end %>" name="enable"/>
@@ -165,28 +175,28 @@ font-size: 14px;
     </form>
     <li class="error-box">
           <div class="info">
-                    <p><label><B>高级配置-切换服务器(不懂勿动)</B></label></p>
-		    <p><label>请注意：点击“切换”按钮，将会停止当前的服务,并不启动新服务。</label></p>
-                    <p><label>建议使用“切换并启动”按钮</label></p>
+            <p><label><B>高级配置-切换服务器(不懂勿动)</B></label></p>
+		    <p><label><B>增加：</b>点击“切换”按钮，停止当前服务，可在上面增加服务器，然后"保存并启动"</label></p>
+            <p><label><B>切换：</b>选择目标服务器后，点击“切换并启动”按钮，可启动新服务</label></p>
            </div>
     </li>
     <form id="form2" action="shadowsocks_save" method="post" name="shadowsocks" >
     <li>
     <div  class="memu row" id="cfg_box">	
-	<p><label class="label">SS服务器</label>
+	<p><label class="label">服务器</label>
         <span>
             <select name="ss_server_name" class="txt-input select txt" style="width:158px;">
                 <option value="1" <% if ss_server_name=="1" then io.write("selected=selected"); end %>>1(<%=ss_server_des1%>)</option>
                 <option value="2" <% if ss_server_name=="2" then io.write("selected=selected"); end %>>2(<%=ss_server_des2%>)</option>
                 <option value="3" <% if ss_server_name=="3" then io.write("selected=selected"); end %>>3(<%=ss_server_des3%>)</option>
                 <option value="4" <% if ss_server_name=="4" then io.write("selected=selected"); end %>>4(<%=ss_server_des4%>)</option>
-		<option value="5" <% if ss_server_name=="5" then io.write("selected=selected"); end %>>5(<%=ss_server_des5%>)</option>
-                <option value="6" <% if ss_server_name=="6" then io.write("selected=selected"); end %>>6(<%=ss_server_des6%>)</option>  
-	        <option value="7" <% if ss_server_name=="7" then io.write("selected=selected"); end %>>7(<%=ss_server_des7%>)</option>
-	        <option value="8" <% if ss_server_name=="8" then io.write("selected=selected"); end %>>8(<%=ss_server_des8%>)</option>
-		<option value="9" <% if ss_server_name=="9" then io.write("selected=selected"); end %>>9(<%=ss_server_des9%>)</option>
-                <option value="10" <% if ss_server_name=="10" then io.write("selected=selected"); end %>>10(<%=ss_server_des10%>)</option>
-	  </select>
+		       <option value="5" <% if ss_server_name=="5" then io.write("selected=selected"); end %>>5(<%=ss_server_des5%>)</option>
+               <option value="6" <% if ss_server_name=="6" then io.write("selected=selected"); end %>>6(<%=ss_server_des6%>)</option>  
+	           <option value="7" <% if ss_server_name=="7" then io.write("selected=selected"); end %>>7(<%=ss_server_des7%>)</option>
+	           <option value="8" <% if ss_server_name=="8" then io.write("selected=selected"); end %>>8(<%=ss_server_des8%>)</option>
+		       <option value="9" <% if ss_server_name=="9" then io.write("selected=selected"); end %>>9(<%=ss_server_des9%>)</option>
+               <option value="10" <% if ss_server_name=="10" then io.write("selected=selected"); end %>>10(<%=ss_server_des10%>)</option>
+	        </select>
         </span>
         </p>
     </div>

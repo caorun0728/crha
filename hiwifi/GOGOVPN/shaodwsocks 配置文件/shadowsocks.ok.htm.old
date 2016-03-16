@@ -132,19 +132,13 @@ font-size: 14px;
         	<span>
             	    <select name="antixxx_dns_server_ip" class="txt-input select txt" style="width:158px;">
                     <option value="8.8.4.4" <% if antixxx_dns_server_ip=="8.8.4.4" then io.write("selected=selected"); end %>>谷歌</option>
-					<option value="8.8.8.8" <% if antixxx_dns_server_ip=="8.8.8.8" then io.write("selected=selected"); end %>>Google</option>
                     <option value="60.32.112.42" <% if antixxx_dns_server_ip=="60.32.112.42" then io.write("selected=selected"); end %>>日本</option>
                     <option value="168.95.1.1" <% if antixxx_dns_server_ip=="168.95.1.1" then io.write("selected=selected"); end %>>台湾</option>
                     <option value="218.102.23.228" <% if antixxx_dns_server_ip=="218.102.23.228" then io.write("selected=selected"); end %>>香港</option>
                     <option value="168.126.63.1" <% if antixxx_dns_server_ip=="168.126.63.1" then io.write("selected=selected"); end %>>韩国</option>
                     <option value="208.67.222.222" <% if antixxx_dns_server_ip=="208.67.222.222" then io.write("selected=selected"); end %>>openDns</option>
-					<option value="128.199.248.105" <% if antixxx_dns_server_ip=="128.199.248.105" then io.write("selected=selected"); end %>>新加坡</option>
-					<option value="212.50.131.153" <% if antixxx_dns_server_ip=="212.50.131.153" then io.write("selected=selected"); end %>>芬兰</option>
-					<option value="114.114.114.114" <% if antixxx_dns_server_ip=="114.114.114.114" then io.write("selected=selected"); end %>>114</option>
-					<option value="114.114.115.115" <% if antixxx_dns_server_ip=="114.114.115.115" then io.write("selected=selected"); end %>>114DNS</option>
-					<option value="223.5.5.5" <% if antixxx_dns_server_ip=="223.5.5.5" then io.write("selected=selected"); end %>>阿里</option>
-					<option value="223.6.6.6" <% if antixxx_dns_server_ip=="223.6.6.6" then io.write("selected=selected"); end %>>阿里DNS</option>
-					<option value="119.29.29.29" <% if antixxx_dns_server_ip=="119.29.29.29" then io.write("selected=selected"); end %>>DNSPod</option>
+		    <option value="128.199.248.105" <% if antixxx_dns_server_ip=="128.199.248.105" then io.write("selected=selected"); end %>>新加坡</option>
+		    <option value="212.50.131.153" <% if antixxx_dns_server_ip=="212.50.131.153" then io.write("selected=selected"); end %>>芬兰</option>	
             	    </select>
         	</span></p> 
 
