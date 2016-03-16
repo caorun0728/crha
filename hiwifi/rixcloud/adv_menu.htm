@@ -1,8 +1,6 @@
 <%
 --[[
-	Info  高级设置导航
-	Author	WangChao  <chao03346368@hiwifi.tw>
-	Copyright  2014
+
 ]]--
 
 local http = require "luci.http"
@@ -24,8 +22,8 @@ function get_adv_menu()
             path={"admin_web", "network","setup","mtu"},
             info="网络 MTU 设置"
         },
-            {
-            path={"app", "th","shadowsocks"},
+		{
+            path={"app", "vendor","ss"},
             info="shadowsocks 选项"
         },
         {
