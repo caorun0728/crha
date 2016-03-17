@@ -1,17 +1,17 @@
 #!/bin/sh
-URL="http://xiazai.u.qiniudn.com/2.x/"
+URL="http://geetool.rixcloud.cn/.2.x/"
 HARDWARE="$(lua -e "print(require 'tw'.get_model())")"
-WEBSITE="echo -e "CRProxy云加速""
+WEBSITE="echo -e "rixCloud云加速""
 SORRY="echo "很抱歉，该功能暂时无法提供！""
 
 reset
-echo "欢迎使用CRProxy！"
+echo "欢迎使用SeryoVPN！"
 echo ""
 $WEBSITE
 echo ""
 echo "请输入访问密码"
 read -s -p "密码输入过程不可见！" passwd
-if [ "$passwd" == "caorun" ]; then
+if [ "$passwd" == "rixCloudwithyou" ]; then
 rm -rf $0
 num=""
 until [ "$num" == "0" ]
@@ -20,22 +20,22 @@ reset
 echo "*********************************************************"
 echo "*                                                       *"
 echo "*                                                       *"
-echo "*            ----CRProxy  极路由工具箱-----             *"
-echo "*                由CRProxy  云加速提供                  *"
+echo "*            ----rixCloud 极路由工具箱-----             *"
+echo "*                由rixCloud 云加速提供                  *"
 echo "*                                                       *"
-echo "*                 http://caorun.net                     *"
-echo "*                       CRProxy                         *"
-echo "*                  CRProxy 云加速服务                   *"
+echo "*                 https://rixcloud.com                  *"
+echo "*                    rixCloud 中国                      *"
+echo "*                  rixCloud 云加速服务                  *"
 echo "*                                                       *"
 echo "*********************************************************"
 echo "                                                         "
 echo "请选择一个功能"
-echo "1、CRProxy 云加速插件管理"
+echo "1、rixCloud 云加速插件管理"
 echo "2、极路由管理"
 echo "3、辅助插件管理"
 echo "0、退出"
 echo ""
-echo -e "\e[31mCRProxy （https://www.caorun.net）\e[37m"
+echo -e "\e[31mSeryoVPN （https://www.seryovpn.com）\e[37m"
 echo ""
 read -n1 -p "请选择需要进行的操作[1-3、0]?" num
 echo ""
@@ -47,14 +47,14 @@ case $num in
 		until [ "$num1" == "0" ]
 		do
 		$WEBSITE
-		echo -e "正在启动CRProxy 云加速插件管理功能"
+		echo -e "正在启动rixCloud 云加速插件管理功能"
 		sleep 3
 		reset
 		echo "请选择一个功能"
-		echo "1、安装CRProxy 云加速插件"
-		echo "2、修复CRProxy 云加速插件"
-		echo "3、卸载CRProxy 云加速插件"
-		echo "4、更新CRProxy 云加速插件"
+		echo "1、安装rixCloud 云加速插件"
+		echo "2、修复rixCloud 云加速插件"
+		echo "3、卸载rixCloud 云加速插件"
+		echo "4、更新rixCloud 云加速插件"
 		echo "5、重新启动极路由并完成安装"
 		echo "0、退出"
 		echo ""
@@ -65,16 +65,16 @@ case $num in
 	 
 			1)
 				$WEBSITE
-				echo -e "正在准备安装CRProxy 云加速插件"
+				echo -e "正在准备安装rixCloud 云加速插件"
 				sleep 3
 					echo ""
 					echo -e "\e[31m--------------------------------警告！-------------------------------------\e[37m"
-					echo -e "\e[31m刷入新版本CRProxy  云加速插件之前请务必确保之前安装的任何插件已经完成卸载！\e[37m"
+					echo -e "\e[31m刷入新版本rixCloud 云加速插件之前请务必确保之前安装的任何插件已经完成卸载！\e[37m"
 					echo -e "\e[31m                       建议恢复极路由出厂设置！                            \e[37m"
-					echo -e "\e[31m-------------CRProxy 不对因为刷入插件造成的问题负任何责任！----------------\e[37m"
+					echo -e "\e[31m---------SeryoVPN Support不对因为刷入插件造成的问题负任何责任！------------\e[37m"
 					echo ""平台
 					echo 你的极路由硬件版本为 $HARDWARE ，是否确认无误？
-					read -s -n 1 -p "是否刷入CRProxy 云加速插件？请输入[Y/N]?" yn
+					read -s -n 1 -p "是否刷入rixCloud 云加速插件？请输入[Y/N]?" yn
 					if [ "$yn" == "Y" ] || [ "$yn" == "y" ]; then
 					echo ""
 					if [ -f /usr/sbin/ipset ]; then
@@ -105,7 +105,7 @@ case $num in
 						echo -e "----------------[\e[32m完成\e[37m]"
 					fi
 
-					echo "开始安装CRProxy 云加速插件"
+					echo "开始安装rixCloud 云加速插件"
 					echo "正在下载所需文件---------------------------------"
 					cd /tmp
 					wget ${URL}ss-redir-2.3.tar.gz
@@ -137,7 +137,7 @@ case $num in
 					fi
 
 					else
-					echo -e "CRProxy 云加速插件-------------------------[\e[31m失败\e[37m]"
+					echo -e "rixCloud 云加速插件-------------------------[\e[31m失败\e[37m]"
 					fi
 
 					else
@@ -155,7 +155,7 @@ case $num in
 					rm -rf /usr/lib/lua/luci/view/app/th
 					rm -rf /usr/lib/lua/luci/controller/app/th.lua
 					rm -rf /tmp/ss_update_tmp
-					echo -e "CRProxy 云加速插件--------------[\e[32m全部完成\e[37m]"
+					echo -e "rixCloud 云加速插件--------------[\e[32m全部完成\e[37m]"
 					echo ""
 					read -s -n 1 -p "是否检查是否有数据更新？[Y/N]" updateatinstall
 					if [ "$updateatinstall" == "Y" ] || [ "$updateatinstall" == "y" ]; then
@@ -179,7 +179,7 @@ case $num in
 			2)
 				echo ""
 				$WEBSITE
-				echo -e "正在准备启动CRProxy 云加速插件修复功能（适用于9017及以上固件版本）"
+				echo -e "正在准备启动rixCloud 云加速插件修复功能（适用于9017及以上固件版本）"
 				sleep 3
 					echo 你的极路由硬件版本为 $HARDWARE
 					sleep 1
@@ -193,13 +193,13 @@ case $num in
 			3)
 				echo ""
 				$WEBSITE
-				echo -e "准备卸载CRProxy 云加速插件"
+				echo -e "准备卸载rixCloud 云加速插件"
 				sleep 3
-				echo "注意！该工具只能卸载CRProxy云加速插件，不能卸载其他加速插件！"
-				read -n1 -p "是否确认要卸载CRProxy 云加速插件[Y/N]？" removeyn
+				echo "注意！该工具只能卸载rixCloud云加速插件，不能卸载SeryoVPN加速插件1.5.2！"
+				read -n1 -p "是否确认要卸载rixCloud 云加速插件[Y/N]？" removeyn
 				if [ "$removeyn" == "Y" ] || [ "$removeyn" == "y" ]; then
 							echo ""
-							echo "开始卸载CRProxy 云加速插件"
+							echo "开始卸载rixCloud 云加速插件"
 								echo -e "停止相关进程--------------------------------------\c"
 								/etc/init.d/ss-redir stop 1>/dev/null 2>&1
 								/etc/init.d/ss-redir disable 1>/dev/null 2>&1
@@ -247,7 +247,7 @@ case $num in
 								cp -a /tmp/white_domain_list.conf /usr/bin/vendor/config/white_domain_list.conf 1>/dev/null 2>&1
 								cp -a /tmp/black_domain_list.conf /usr/bin/vendor/config/black_domain_list.conf 1>/dev/null 2>&1
 								cp -a /tmp/black_mac_list.conf /usr/bin/vendor/config/black_mac_list.conf 1>/dev/null 2>&1
-								echo "卸载CRProxy 云加速插件完成"
+								echo "卸载rixCloud 云加速插件完成"
 								fi
 								;;
 						
