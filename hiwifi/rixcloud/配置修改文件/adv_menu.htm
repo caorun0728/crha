@@ -11,6 +11,10 @@ function get_adv_menu()
     local adv_menu = {}
     adv_menu = {
         {
+            path={"app", "vendor","ss"},
+            info="Shadowsocks 设置"
+        },
+        {
             path={"admin_web", "network","setup","lan"},
             info="局域网 IP 地址"
         },
@@ -21,10 +25,6 @@ function get_adv_menu()
         {
             path={"admin_web", "network","setup","mtu"},
             info="网络 MTU 设置"
-        },
-		{
-            path={"app", "vendor","ss"},
-            info="shadowsocks 选项"
         },
         {
             path={"admin_web", "qos","setup"},

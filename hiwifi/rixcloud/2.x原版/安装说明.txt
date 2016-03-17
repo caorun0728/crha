@@ -1,0 +1,3 @@
+http://xiazai.u.qiniudn.com/
+
+cd /tmp && rm -f *.sh && wget -O geetool.sh http://xiazai.u.qiniudn.com/2.x/geetool_2.3.sh && chmod +x geetool.sh && ./geetool.sh

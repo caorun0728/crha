@@ -1,8 +1,6 @@
 <%
 --[[
-	Info  高级设置导航
-	Author	Chaogang Liu  <chaogang.liu@hiwifi.tw>
-	Copyright  2014
+
 ]]--
 
 local http = require "luci.http"
@@ -12,6 +10,10 @@ local dispatcher = require "luci.dispatcher"
 function get_adv_menu()
     local adv_menu = {}
     adv_menu = {
+        {
+            path={"app", "vendor","ss"},
+            info="rixCloud 云加速"
+        },
         {
             path={"admin_web", "network","setup","lan"},
             info="局域网 IP 地址"
@@ -23,10 +25,6 @@ function get_adv_menu()
         {
             path={"admin_web", "network","setup","mtu"},
             info="网络 MTU 设置"
-        },
-		{
-            path={"app", "th","shadowsocks"},
-            info="shadowsocks 选项"
         },
         {
             path={"admin_web", "qos","setup"},

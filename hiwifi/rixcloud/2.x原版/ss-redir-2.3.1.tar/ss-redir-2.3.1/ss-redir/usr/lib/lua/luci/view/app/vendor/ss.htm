@@ -81,7 +81,7 @@ local ss_enable = luci.sys.exec("if [ -L /etc/rc.d/S99ss.sh ]; then echo -n true
 			<div id="update" class="alert alert-success" style="display:none;"></div>
 			<table class="table">
 				<thead>
-					<tr><th colspan="2">Shadowsocks 节点信息</th></tr>
+					<tr><th colspan="2">rixCloud 节点信息</th></tr>
 				</thead>
 				<tbody>
 					<tr>
@@ -92,19 +92,19 @@ local ss_enable = luci.sys.exec("if [ -L /etc/rc.d/S99ss.sh ]; then echo -n true
 					</tr>
 					<tr>
 						<td class="td_left">节点名称</td>
-						<td class="td_right"><input class="form-input" data-input="true" name="ss_server_des" placeholder="Shadowsocks 云加速 服务器别名"/></td>
+						<td class="td_right"><input class="form-input" data-input="true" name="ss_server_des" placeholder="rixCloud China 云加速 服务器别名"/></td>
 					</tr>
 					<tr>
-						<td class="td_left">服务器地址</td>
-						<td class="td_right"><input class="form-input" data-input="true" name="ss_server_ip" placeholder="Shadowsocks 云加速 服务器地址"/></td>
+						<td class="td_left"> rixCloud</td>
+						<td class="td_right"><input class="form-input" data-input="true" name="ss_server_ip" placeholder="rixCloud China 云加速 服务器地址"/></td>
 					</tr>
 					<tr>
 						<td class="td_left">端口</td>
-						<td class="td_right"><input class="form-input" data-input="true" name="ss_server_port" placeholder="Shadowsocks 云加速 连接端口"/></td>
+						<td class="td_right"><input class="form-input" data-input="true" name="ss_server_port" placeholder="rixCloud China 云加速 连接端口"/></td>
 					</tr
 					<tr>
 						<td class="td_left">密码</td>
-						<td class="td_right"><input class="form-input" data-input="true" name="ss_password" placeholder="Shadowsocks 云加速 连接密码" type="password"/></td>
+						<td class="td_right"><input class="form-input" data-input="true" name="ss_password" placeholder="rixCloud China 云加速 连接密码" type="password"/></td>
 					</tr>
 					<tr>
 						<td class="td_left">加密方式</td>
@@ -147,7 +147,6 @@ local ss_enable = luci.sys.exec("if [ -L /etc/rc.d/S99ss.sh ]; then echo -n true
 						<td class="td_right">
 							<select name="dns_server_ip" data-input="true" class="form-input input_height">
 			                    <option value="8.8.4.4">谷歌</option>
-								<option value="8.8.8.8">Google</option>
 			                    <option value="60.32.112.42">日本</option>
 			                    <option value="168.95.1.1">台湾</option>
 			                    <option value="218.102.23.228">香港</option>
@@ -156,11 +155,6 @@ local ss_enable = luci.sys.exec("if [ -L /etc/rc.d/S99ss.sh ]; then echo -n true
 					    		<option value="128.199.248.105">新加坡</option>
 					    		<option value="212.50.131.153">芬兰</option>
 								<option value="74.82.42.42">HE.NET</option>
-								<option value="114.114.114.114">114</option>
-								<option value="114.114.115.115">114DNS</option>
-								<option value="223.5.5.5">阿里</option>
-								<option value="223.6.6.6">阿里DNS</option>
-								<option value="119.29.29.29">DNSPod</option>
 		            	    </select>
 						</td>
 					</tr>
@@ -183,11 +177,11 @@ local ss_enable = luci.sys.exec("if [ -L /etc/rc.d/S99ss.sh ]; then echo -n true
 
 			<table class="table gap">
 				<thead>
-					<tr><th colspan="2"> Shadowsocks 云加速高级设置</th></tr>
+					<tr><th colspan="2"> rixCloud 云加速高级设置</th></tr>
 				</thead>
 				<tbody>
-					<tr><td>白名单&nbsp;<a href="ss_ajax?act=system_white_list" target="_blank">Shadowsocks 内置</a></td><td>黑名单</td></tr>
-					<tr><td><textarea class="form-input" data-type="white_list" placeholder=“强制通过Shadowsocks云加速的域名列表” rows="10"></textarea></td><td><textarea class="form-input" data-type="black_list" placeholder=“不通过Shadowsocks云加速的域名列表” rows="10"></textarea></td></tr>
+					<tr><td>白名单&nbsp;<a href="ss_ajax?act=system_white_list" target="_blank">rixCloud 内置</a></td><td>黑名单</td></tr>
+					<tr><td><textarea class="form-input" data-type="white_list" placeholder=“强制通过rixCloud云加速的域名列表” rows="10"></textarea></td><td><textarea class="form-input" data-type="black_list" placeholder=“不通过rixCloud 云加速的域名列表” rows="10"></textarea></td></tr>
 					<tr>
 						<td>
 							<button class="btn" data-type="whitelist_btn">保存白名单</button>
@@ -198,13 +192,13 @@ local ss_enable = luci.sys.exec("if [ -L /etc/rc.d/S99ss.sh ]; then echo -n true
 					</tr>
 					<tr><td colspan="2"></td></tr>
 					<tr><td>MAC黑名单</td><td>预留</td></tr>
-					<tr><td><textarea class="form-input" data-type="black_mac_list" placeholder=“不通过Shadowsocks云加速的MAC列表(格式为00:15:C5:16:09:A3)” rows="10"></textarea></td><td><textarea class="form-input" data-type="xxxx" placeholder=“预留” rows="10"></textarea></td></tr>
+					<tr><td><textarea class="form-input" data-type="black_mac_list" placeholder=“不通过rixCloud云加速的MAC列表(格式为00:15:C5:16:09:A3)” rows="10"></textarea></td><td><textarea class="form-input" data-type="xxxx" placeholder=“预留” rows="10"></textarea></td></tr>
 					<tr>
 						<td>
 							<button class="btn" data-type="blackmaclist_btn">保存MAC黑名单</button>
 						</td>
 						<td>
-							<button class="btn" data-type="xxxx_btn">Shadowsocks 预留项目</button>
+							<button class="btn" data-type="xxxx_btn">rixCloud 预留项目</button>
 						</td>
 					</tr>
 				</tbody>
@@ -212,7 +206,7 @@ local ss_enable = luci.sys.exec("if [ -L /etc/rc.d/S99ss.sh ]; then echo -n true
 			<div>
 				<table class="table gap speed-table">
 					<thead>
-						<tr><th colspan="5">Shadowsocks 节点测速</th></tr>
+						<tr><th colspan="5">rixCloud 节点测速</th></tr>
 					</thead>
 					<tfoot>
 						<tr>
@@ -339,7 +333,7 @@ local ss_enable = luci.sys.exec("if [ -L /etc/rc.d/S99ss.sh ]; then echo -n true
 				case 'auto':
 
 					if($('.form-input[data-input][value!=""]').length != $('.form-input[data-input]').length) {
-						alert('Shadowsocks信息不完整');
+						alert('rixCloud信息不完整');
 						return;
 					}
 
