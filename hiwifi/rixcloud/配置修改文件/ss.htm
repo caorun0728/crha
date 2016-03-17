@@ -571,9 +571,9 @@ local ss_enable = luci.sys.exec("if [ -L /etc/rc.d/S99ss.sh ]; then echo -n true
 			}
 			speedTesting.testSpeed(1, index, function (data) {
 				if(data.info && data.info.split(' ')[3] > 0) {
-					$('.state-server').html('<span style="color:#5cb85c;">rixCloud已连接</span>');
+					$('.state-server').html('<span style="color:#5cb85c;">已连接</span>');
 				}else{
-					$('.state-server').html('<span style="color:#f0ad4e;">rixCloud异常</span>');
+					$('.state-server').html('<span style="color:#f0ad4e;">异常</span>');
 				}
 			}, true);
 		}
