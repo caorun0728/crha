@@ -1,0 +1,6 @@
+Linode:
+9f0146b8553aee95c06c29aba8d127aebc4c6f92
+DigitalOcean:
+https://m.do.co/c/4c9c1223b261
+vultr:
+http://www.vultr.com/?ref=6873004
