@@ -64,6 +64,20 @@ cd $proj<br>
 
 </p>
 
+<p><strong>6、打包成压缩包</strong></p>
+<p>tar -C ./ -czvf 1.tar.gz etc lib usr</p>
+<p>简单说就是打包为1的压缩包，把文件夹etc lib usr</p>
+<p># 本地生成 tar 包<br>
+git clone git@github.com:qiwihui/hiwifi-ss.git<br>
+cd hiwifi-ss<br>
+git checkout v1.0.5<br>
+tar -C ./ -czvf hiwifi-ss.tar.gz etc lib usr<br>
+scp -P 1022 hiwifi-ss.tar.gz root@192.168.199.1:/tmp<br>
+
+# ssh登录极路由<br>
+tar xzvf /tmp/hiwifi-ss.tar.gz -C /</p>
+
+
 <hr>
 <p><strong>2、相关网站资料：</strong></p>
 <p>
