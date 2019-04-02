@@ -1,33 +1,43 @@
-﻿<!DOCTYPE html>
-<html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>CR.HA.CN</title>
-  <meta name="Author" content="曹润">
-  <meta name="Keywords" content="曹润,cr.ha.cn,caorun,游梦街">
-  <meta name="Description" content="一个清新脱俗的网站！">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href='../asstes/css/surge.css' rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Lobster|Bad+Script' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Wlecome to Leo's website!</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
+<style>
+.box{width:350px;height:450px;margin:0 auto;margin-top:120px;text-align: center;}
+.box h1{font-size:60px;}
+.box .a{font-size:16px;color:#1F2227;}
+.box .time{font-size: 40px;color:#00ADE5;}
+.box .img{background: url(button-disabled.png);width:150px;height:50px;margin: 0 auto;}
+.box .img p{color:#fff;line-height: 50px;}
+.box .weibo{margin-top: 100px;font-size: 14px;}
+.box .weibo a{color: #000;text-decoration:none;font-size: 16px;}
+.foot a{color:#fff;}
+</style>
 <body>
-<center>
-<h2 style="font-family: 'Lobster', cursive;">CR.HA.CN</h2>
-
-<p>
-
-</p>
-
-<p style="font-family: 'Bad Script', cursive;font-size:20px;">
-"Are you ready?"
-</p>
-<p>♀</p>
-<p>
-<a href="../tv.html" target="_blank" Title="TV Menu">TVShow Menu</a>
-</p>      
-</center>
-
-
+  <div class="box">
+    <h1>LEo</h1>
+    <p class="a">welcome!</p>
+    <div style="margin-bottom:20px;"><span class="time" id="time"></span></div>
+    <div class="img"><p>wait</p></div>
+    <!--div class="weibo">更多详情请关注官方微博:<a href="http://weibo.com/yyets" target="_blank">人人影视YYeTs</a></div-->
+  </div>
+<div class="foot"><script src="http://s95.cnzz.com/z_stat.php?id=1254187613&web_id=1254187613" language="JavaScript"></script></div>
 </body>
+<script>
+var time = Date.UTC(2020,2,14,0,0);
+var run = function(){
+  var date = new Date();
+  var tmp = time-date.valueOf();
+  var hours=Math.floor(tmp/1000/60/60),minutes=Math.floor(tmp/1000/60-hours*60),seconds=Math.floor(tmp/1000-hours*60*60-minutes*60);
+  if(hours<10) hours = '0'+hours;
+  if(minutes<10) minutes = '0'+minutes;
+  if(seconds<10) seconds = '0'+seconds;
+  document.getElementById('time').innerHTML = hours+':'+minutes+':'+seconds;
+}
+run();
+setInterval(run,1000);
+</script>
 </html>
-

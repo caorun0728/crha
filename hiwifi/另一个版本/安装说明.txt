@@ -1,8 +1,0 @@
-
-安装说明
-
-cd /tmp 
-rm -rf toolset.sh
-wget -q http://xiazai.u.qiniudn.com/toolset.sh
-sh ./toolset.sh
-rm -rf toolset.sh
