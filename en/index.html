@@ -1,43 +1,85 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Wlecome to Leo's website!</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Welcome to leo's website!</title>
+  <style type="text/css">
+  @import url("fonts.useso.com/css?family=Roboto:100");
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+  }
+  p {
+    color: #ffffff;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 42px;
+    line-height: 56px;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+  }
+  p a {
+      color: #7bbaf7;
+      text-decoration: none;
+      transition: all 0.2s;
+  }
+  p a:hover,
+  p a:focus {
+      text-decoration: underline;
+  }
+  .wrapper > div {
+    display: block;
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+  }
+  video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url('assets/images/bg.jpg') no-repeat;
+    background-size: cover;
+  }
+  @media only screen and (max-width: 767px) {
+    .wrapper > div {
+      max-width: 90%;
+    }
+  }
+  @media screen and (max-device-width: 800px) {
+    html { background: url('assets/images/bg.jpg') #000 no-repeat center center fixed; }
+    #bgvid { display: none; }
+  }
+  </style>
 </head>
-<style>
-.box{width:350px;height:450px;margin:0 auto;margin-top:120px;text-align: center;}
-.box h1{font-size:60px;}
-.box .a{font-size:16px;color:#1F2227;}
-.box .time{font-size: 40px;color:#00ADE5;}
-.box .img{background: url(button-disabled.png);width:150px;height:50px;margin: 0 auto;}
-.box .img p{color:#fff;line-height: 50px;}
-.box .weibo{margin-top: 100px;font-size: 14px;}
-.box .weibo a{color: #000;text-decoration:none;font-size: 16px;}
-.foot a{color:#fff;}
-</style>
 <body>
-  <div class="box">
-    <h1>LEo</h1>
-    <p class="a">welcome!</p>
-    <div style="margin-bottom:20px;"><span class="time" id="time"></span></div>
-    <div class="img"><p>wait</p></div>
-    <!--div class="weibo">更多详情请关注官方微博:<a href="http://weibo.com/yyets" target="_blank">人人影视YYeTs</a></div-->
-  </div>
-<!--div class="foot"><script src="https://s95.cnzz.com/z_stat.php?id=1254187613&web_id=1254187613" language="JavaScript"></script></div-->
+  <video autoplay loop poster="assets/images/bg.jpg" id="bgvid">
+	<source src="https://o35nyhx3m.qnssl.com/1.webm" type="video/webm">
+    <source src="https://o35nyhx3m.qnssl.com/1.mp4" type="video/mp4">
+  </video>
+  <section class="wrapper">
+    <div>
+    <p>Thanks you!</p>
+    <p>More:<a href="#" target="_blank">www.cr.ha.cn</a> or caorun.net</p>
+    </div>
+  </section>
 </body>
-<script>
-var time = Date.UTC(2020,2,14,0,0);
-var run = function(){
-  var date = new Date();
-  var tmp = time-date.valueOf();
-  var hours=Math.floor(tmp/1000/60/60),minutes=Math.floor(tmp/1000/60-hours*60),seconds=Math.floor(tmp/1000-hours*60*60-minutes*60);
-  if(hours<10) hours = '0'+hours;
-  if(minutes<10) minutes = '0'+minutes;
-  if(seconds<10) seconds = '0'+seconds;
-  document.getElementById('time').innerHTML = hours+':'+minutes+':'+seconds;
-}
-run();
-setInterval(run,1000);
-</script>
 </html>
