@@ -1,0 +1,10 @@
+curl -i https://git.io -F "url=" \
+    -F "code=SurgeProxy.list"
+
+
+curl -i https://git.io -F url="https://raw.githubusercontent.com/caorun0728/Surge/master/Module/All.sgmodule" -F "code=Cao.Run.sgmodule"
+
+curl -i https://git.io -F url="https://raw.githubusercontent.com/caorun0728/Surge/master/Provider/CustomProxy.list?v=1" -F "code=CustomProxy"
+
+
+caorun0728.github.io/Surge/Module/All.sgmodule
