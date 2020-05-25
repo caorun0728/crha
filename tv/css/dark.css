@@ -3,7 +3,27 @@
 
 body {
   
-color: #fff;
-background:black;
+  font-family: -apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif
+  line-height: 1.6;
+  color: white;
+  background:black;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
+
+pre {
+  background-color: #062b52;
+  border: 1px solid #FFF;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+a code,a:link code,a:visited code{color:#FFF;}
